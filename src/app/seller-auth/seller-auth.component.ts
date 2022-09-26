@@ -27,6 +27,7 @@ export class SellerAuthComponent implements OnInit {
     //     this.router.navigate(['seller-home'])
     //   }
     // }); 
+    
     console.log(data)
     this.seller.userSignUp(data)
   }
@@ -42,7 +43,7 @@ export class SellerAuthComponent implements OnInit {
   }
   openLogin(){ 
    this.showLogin=true
-   
+
   }
   openSignUp(){
     this.showLogin=false
