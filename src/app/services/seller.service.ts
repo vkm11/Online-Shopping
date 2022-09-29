@@ -21,7 +21,8 @@ export class SellerService {
         this.isSellerLoggedIn.next(true);
         localStorage.setItem('seller',JSON.stringify(result.body))
 
-        this.router.navigate(['seller-home'])
+        // this.router.navigate(['seller-home'])
+        this.router.navigate(['showLogin'])
         // console.log("result", result);
       })
   //  return false; 

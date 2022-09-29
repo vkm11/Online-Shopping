@@ -1,20 +1,29 @@
-<!-- <nav class="nav">
-    <h1>E-COMM</h1>
-    <div class="nav-search">
+<nav class="nav">
+    <h1><a routerLink="/">Digital Shopping</a></h1>
+    <div *ngIf="menuType==='default'" class="nav-search">
         <input type="text" placeholder="Search for products">
         <button>Search</button>
     </div>
-    <ul>
+    <div [ngSwitch]="menuType">
+      <ul *ngSwitchCase="'default'">
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/seller-auth">Seller</a></li>
         <li><a routerLink="#">Login</a></li>
         <li><a href="#">Cart(0)</a></li>
-        
-    </ul>
-</nav> -->
+      </ul>
+
+      <ul *ngSwitchCase="'seller'">
+        <li><a routerLink="seller-add-product">Add Product</a></li>
+        <li><a routerLink="seller-home">List</a></li>
+        <li><a (click)="logout()">LogOut</a></li>
+        <li><a href="#">{{sellerName | titlecase}}</a></li>
+      </ul>
+    </div>
+    
+</nav>
 
 
-<nav class="navbar navbar-expand-lg bg-light">
+<!-- <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand italic" style="color:red">E-commerce</a>
       <div class="collapse navbar-collapse" id="navbarScroll">
@@ -31,6 +40,7 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="#">Cart(0)</a>
           </li>
+          
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search">
@@ -38,11 +48,13 @@
         </form>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
 
-<!--   
-  <nav class="navbar navbar-dark bg-dark fixed-top">
+
+
+  
+  <!-- <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">E-Commerce</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
