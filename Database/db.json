@@ -1,0 +1,51 @@
+{
+  "seller": [
+    {
+      "name": "Vijay Mane",
+      "email": "vijay@gmail.com",
+      "password": 123,
+      "id": 1
+    },
+    {
+      "name": "Suri",
+      "email": "suri@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "Nithin",
+      "email": "nithin@gmail.com",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "OnePlus Nord 2T",
+      "price": 28999,
+      "category": "mobiles",
+      "color": "Black",
+      "image": "https://static.toiimg.com/thumb/resizemode-4,msid-82932058,imgsize-200,width-600/82932058.jpg",
+      "description": "this is new mobile",
+      "id": 1
+    },
+    {
+      "name": "Redmi note 11 pro",
+      "price": "25000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "This is new branded Mobile",
+      "image": "https://images-eu.ssl-images-amazon.com/images/I/410TBgL2KXL._SX300_SY300_QL70_FMwebp_.jpg",
+      "id": 2
+    },
+    {
+      "name": "Redmi Note 8",
+      "price": "13000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "This is old Mobile",
+      "image": "https://images-eu.ssl-images-amazon.com/images/I/41mGLH7EUNL._SX300_SY300_QL70_FMwebp_.jpg",
+      "id": 3
+    }
+  ]
+}
