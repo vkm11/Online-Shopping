@@ -17,3 +17,7 @@
 ## Angular Material Icons:-
 
 https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
+
+
+### Import app.module.ts
+import {MatIconModule} from '@angular/material/icon';
