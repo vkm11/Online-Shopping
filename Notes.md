@@ -12,3 +12,8 @@
 ## Create-Folder(Database)
 - npm install -g json-server
 - json-server --watch db.json
+
+
+## Angular Material Icons:-
+
+https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
