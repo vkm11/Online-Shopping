@@ -32,20 +32,29 @@
     {
       "name": "Redmi note 11 pro",
       "price": "25000",
-      "color": "Black",
+      "color": "White",
       "category": "Mobile",
       "description": "This is new branded Mobile",
       "image": "https://images-eu.ssl-images-amazon.com/images/I/410TBgL2KXL._SX300_SY300_QL70_FMwebp_.jpg",
       "id": 2
     },
     {
-      "name": "Redmi Note 8",
-      "price": "13000",
+      "name": "Dell i5",
+      "price": "51000",
       "color": "Black",
-      "category": "Mobile",
-      "description": "This is old Mobile",
-      "image": "https://images-eu.ssl-images-amazon.com/images/I/41mGLH7EUNL._SX300_SY300_QL70_FMwebp_.jpg",
+      "category": "Laptop",
+      "description": "Dell Laptop",
+      "image": "https://m.media-amazon.com/images/I/61YldGHdqCL._SY355_.jpg",
       "id": 3
+    },
+    {
+      "name": "sssss",
+      "price": "ssssss",
+      "color": "ssssss",
+      "category": "sssssss",
+      "description": "ssssss",
+      "image": "https://researchsnipers.com/wp-content/uploads/2021/02/electronics.jpeg",
+      "id": 4
     }
   ]
 }
