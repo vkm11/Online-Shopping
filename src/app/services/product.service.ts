@@ -12,4 +12,13 @@ export class ProductService {
     // console.log("Service Called")
     return this.http.post('http://localhost:3000/products',data);
   }
+  productList(){
+    return this.http.get<product[]>('http://localhost:3000/products');
+  }
+  deleteProduct(id:number){
+    return this.http.delete(`http://localhost:3000/products/${id}` )
+  }
+  updateProduct(data :any, id: number){
+    return this.http.put<any>("http://localhost:3000/products/"+id,data)
+  }
 }

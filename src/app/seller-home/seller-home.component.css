@@ -1,0 +1,24 @@
+/* table{
+    text-align: center;
+    color: blueviolet;
+}
+table td, table th{
+    border: 1px solid blueviolet;
+    padding: 10px;
+    min-height: 250px;
+} */
+h1{
+    text-align: center;
+    color: peru;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+.mat-icon{
+    font-size: 2.3rem;
+}
+.edit-icon{
+    margin: 6px;
+    font-size:2rem;
+}

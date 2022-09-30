@@ -37,7 +37,7 @@ body{
     border-radius: 10px;
     background-image: linear-gradient(pink, purple)
 }
-html, body { height: 100%; }
+html, body { height: 100%; width: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .message{
     color: green;

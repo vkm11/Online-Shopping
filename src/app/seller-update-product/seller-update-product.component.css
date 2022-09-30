@@ -1,0 +1,17 @@
+.container{
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 25px;
+    padding: 3rem;
+    background-image: linear-gradient(rgb(243, 175, 49), rgb(216, 216, 7));
+}
+.container h3{
+    text-align: center;
+    color: rgb(209, 17, 81);
+    margin: 1rem;
+}
+.add-product{
+    justify-content: center;
+    display: flex;
+    position: relative;
+}

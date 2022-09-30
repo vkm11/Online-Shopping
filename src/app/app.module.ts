@@ -12,9 +12,8 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
-
-
-
+import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,7 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
     SellerAuthComponent,
     SellerHomeComponent,
     SellerAddProductComponent,
-    
+    SellerUpdateProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +32,7 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
     HttpClientModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
