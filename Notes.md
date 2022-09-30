@@ -15,3 +15,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Create-Folder(Database)
 - npm install -g json-server
 - json-server --watch db.json
+
+
+## Angular Material Icons:-
+
+https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
+
+
+### Import app.module.ts
+
+import {MatIconModule} from '@angular/material/icon';
