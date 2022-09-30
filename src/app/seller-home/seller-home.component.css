@@ -7,10 +7,7 @@ table td, table th{
     padding: 10px;
     min-height: 250px;
 } */
-h1{
-    text-align: center;
-    color: peru;
-}
+
 img{
     height: 100px;
     width: 100px;
@@ -21,4 +18,13 @@ img{
 .edit-icon{
     margin: 6px;
     font-size:2rem;
+}
+.pagePdf{
+    text-align: center;
+    color: peru;
+}
+.pagePdf, h1{
+    text-align: center;
+    color: peru;
+
 }
