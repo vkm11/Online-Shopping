@@ -8,6 +8,8 @@
 6) ng g service services/seller
 7) ng g c seller-add-product
 8) ng g service services/product
+9) ng g c seller-update-product
+10) ng g c footer
 
 ## Create-Folder(Database)
 - npm install -g json-server
