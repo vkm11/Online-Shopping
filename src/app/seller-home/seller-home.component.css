@@ -14,10 +14,8 @@ img{
 }
 .mat-icon{
     font-size: 2.3rem;
-}
-.edit-icon{
-    margin: 6px;
-    font-size:2rem;
+    margin-: 5px;
+    padding-right: 2rem;
 }
 .pagePdf{
     text-align: center;
@@ -26,5 +24,10 @@ img{
 .pagePdf, h1{
     text-align: center;
     color: peru;
-
+}
+#deleteIcon{
+    color: red;
+}
+#editIcon{
+    color: peru;
 }

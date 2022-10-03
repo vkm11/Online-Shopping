@@ -3,3 +3,7 @@ h1{
     justify-content: center;
     color: peru;
 }
+.gifImage{
+    width: 300px;
+    margin: 30px;
+}

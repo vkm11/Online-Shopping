@@ -16,9 +16,16 @@ export class ProductService {
     return this.http.get<product[]>('http://localhost:3000/products');
   }
   deleteProduct(id:number){
-    return this.http.delete(`http://localhost:3000/products/${id}` )
+    return this.http.delete(`http://localhost:3000/products/${id}`)
   }
-  updateProduct(data :any, id: number){
-    return this.http.put<any>("http://localhost:3000/products/"+id,data)
+  // updateProduct(data :any, id: number){
+  //   return this.http.put<any>("http://localhost:3000/products/"+id,data)
+  // }
+  getProduct(id:string){
+    return this.http.get<product>(`http://localhost:3000/products/${id}`)
+  }
+  updateProduct(product:product){
+    console.log(product)
+    return this.http.put<product>(`http://localhost:3000/products/${product.id}`,product)
   }
 }

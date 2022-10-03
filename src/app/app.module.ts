@@ -14,6 +14,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import {MatIconModule} from '@angular/material/icon';
     SellerHomeComponent,
     SellerAddProductComponent,
     SellerUpdateProductComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import {MatIconModule} from '@angular/material/icon';
     HttpClientModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

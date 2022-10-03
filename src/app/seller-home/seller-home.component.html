@@ -52,10 +52,14 @@
                 <td>                    
                     <!-- <button routerLink="/seller-update-product/{{item.id}}">Update</button> -->
                     <!-- <button (click)="deleteProduct(item.id)">Delete</button> -->
-                    <mat-icon class="edit-icon" routerLink="/seller-update-product/{{item.id}}">create</mat-icon>
-                    <mat-icon (click)="deleteProduct(item.id)">delete_forever</mat-icon>
+                    
+                    <mat-icon id="editIcon" routerLink="/seller-update-product/{{item.id}}">create</mat-icon>
+                    <mat-icon id="deleteIcon" (click)="deleteProduct(item.id)">delete_forever</mat-icon>
                 </td>
             </tr>
         </tbody>
     </table>
+
+
+    
 </div>
