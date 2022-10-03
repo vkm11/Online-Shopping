@@ -29,11 +29,12 @@ export class SellerUpdateProductComponent implements OnInit {
     this.product.updateProduct(data).subscribe((result)=>{
       if(result){
         this.productMessage="Product has updated"
-        this.router.navigate(['seller-home'])
       }
     })
     setTimeout(()=>{
       this.productMessage = undefined;
+      this.router.navigate(['seller-home'])
     },3000);
+    
   }
 }
