@@ -47,14 +47,15 @@
       "image": "https://m.media-amazon.com/images/I/61YldGHdqCL._SY355_.jpg",
       "id": 3
     },
-    {
-      "name": "sssss",
-      "price": "ssssss",
-      "color": "ssssss",
-      "category": "sssssss",
-      "description": "ssssss",
-      "image": "https://researchsnipers.com/wp-content/uploads/2021/02/electronics.jpeg",
+     {
+      "name": "Redmi 10A",
+      "price": "8,999",
+      "color": "Silver",
+      "category": "Mobile",
+      "description": "Redmi 10 A, 4gb ram, 64 gb Storage, 5000 mh-battery ",
+      "image": "https://m.media-amazon.com/images/I/41VcqwZ-O8L._SX300_SY300_QL70_FMwebp_.jpg",
       "id": 4
     }
+    
   ]
 }
