@@ -27,3 +27,12 @@ https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
 ### Import app.module.ts
 
 import {MatIconModule} from '@angular/material/icon';
+
+
+
+### Remove Node Module:-
+ 1) rm -rf node_module
+ 2) npm install
+
+### Angular Router:-
+npm i @angular/router
