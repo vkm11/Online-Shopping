@@ -4,13 +4,14 @@
         <input type="text" placeholder="Search for products">
         <button>Search</button>
     </div>
+    
     <div [ngSwitch]="menuType">
       <ul *ngSwitchCase="'default'">
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/seller-auth">Seller</a></li>
         <li><a routerLink="#">Login</a></li>
         <!-- <li><a href="#">Cart(0)</a></li> -->
-        <li><mat-icon class="cartIcon">add_shopping_cart</mat-icon></li>
+        <li><mat-icon class="cartIcon">add_shopping_cart</mat-icon><a class="cart">Cart</a></li>
       </ul>
 
       <ul *ngSwitchCase="'seller'">
@@ -20,7 +21,6 @@
         <li><a href="#">{{sellerName | titlecase}}</a></li>
       </ul>
     </div>
-    
 </nav>
 
 

@@ -9,7 +9,7 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./seller-update-product.component.css']
 })
 export class SellerUpdateProductComponent implements OnInit {
-  productData: undefined | product
+  productData: undefined | product;
   productMessage: undefined | string;
   constructor(private route : ActivatedRoute, private product: ProductService, private router:Router) { }
 
@@ -34,7 +34,7 @@ export class SellerUpdateProductComponent implements OnInit {
     setTimeout(()=>{
       this.productMessage = undefined;
       this.router.navigate(['seller-home'])
-    },3000);
+    },1000);
     
   }
 }

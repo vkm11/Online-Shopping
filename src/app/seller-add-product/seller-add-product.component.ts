@@ -28,7 +28,7 @@ export class SellerAddProductComponent implements OnInit {
       setTimeout(()=>{
         this.addProductMessage=undefined;
         this.router.navigate(['seller-home'])
-      },3000)
+      },1000)
 
       // Or we can write this also It gets shorter! If the function has only one statement,
       // setTimeout(()=>

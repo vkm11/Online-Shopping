@@ -27,7 +27,17 @@ img{
 }
 #deleteIcon{
     color: red;
+    cursor: pointer;
 }
 #editIcon{
     color: peru;
+    cursor: pointer;
+}
+.pdfRecord{
+    cursor: pointer;
+    /* url("https://i.stack.imgur.com/bUGV0.png"), auto; */
+}
+.Search-products{
+    border-color: rgb(181, 59, 206);
+    
 }

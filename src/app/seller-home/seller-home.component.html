@@ -1,7 +1,7 @@
 <div class="product-list">
     <div class="pagePdf">
         <h1>All Product List</h1>
-        <mat-icon onclick = "window.print()"> cloud_download</mat-icon>
+        <mat-icon class="pdfRecord" onclick = "window.print()"> cloud_download</mat-icon>
     </div>
 
     <!-- <table>
@@ -26,6 +26,15 @@
             </tr>
         </tbody>
     </table> -->
+    <div class="Search-products">
+        <input
+        type="text"
+        class="form-control"
+        placeholder="Search..."
+        [(ngModel)]="filterTerm"
+      />
+    </div>
+  
     <p class="message">{{productMessage}}</p>
     <table class="table">
         <thead class="table-dark table-hover">
@@ -41,25 +50,21 @@
             </tr>
         </thead>
         <tbody class="table-danger">
-            <tr *ngFor="let item of productList">
+            <tr *ngFor="let item of productList | filter: filterTerm">
                 <td>{{item.id}}</td>
-                <td><img src="{{item.image}}" alt="image"></td>
+                <td><img src="{{item.image}}" style="border-radius: 20px;" alt="image"></td>
                 <td>{{item.name}}</td>
-                <td>₹.{{item.price}}</td>
+                <td>₹{{item.price}}</td>
                 <td>{{item.color}}</td>
                 <td>{{item.category}}</td>
                 <td>{{item.description}}</td>
                 <td>                    
                     <!-- <button routerLink="/seller-update-product/{{item.id}}">Update</button> -->
                     <!-- <button (click)="deleteProduct(item.id)">Delete</button> -->
-                    
                     <mat-icon id="editIcon" routerLink="/seller-update-product/{{item.id}}">create</mat-icon>
                     <mat-icon id="deleteIcon" (click)="deleteProduct(item.id)">delete_forever</mat-icon>
                 </td>
             </tr>
         </tbody>
     </table>
-
-
-    
 </div>

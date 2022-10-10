@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  
+ 
   menuType: string="default"
   sellerName: string="";
   constructor(private route: Router) { }

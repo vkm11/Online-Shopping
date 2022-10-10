@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { product } from '../data-type';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  popularProduts: undefined | product[];
+  constructor(private product: ProductService) { }
 
   ngOnInit(): void {
+    this.product.popularProduts().subscribe((result)=>{
+      console.log(result);
+      if(result){ 
+        this.popularProduts=result;
+      }
+    })
   }
 
 }

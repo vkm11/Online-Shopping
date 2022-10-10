@@ -17,6 +17,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
 
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +38,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MatTabsModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    Ng2SearchPipeModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

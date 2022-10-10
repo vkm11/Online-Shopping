@@ -4,6 +4,32 @@ h1{
     color: peru;
 }
 .gifImage{
-    width: 300px;
-    margin: 30px;
+    display: flex;
+    width: 380px;
+    height: 380px;
+}
+.heading2{
+    color: red;
+    margin-top: 40px;
+}
+h5{
+    margin:auto; 
+}
+.scroll-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.carousel-inner{
+    margin-top: 20px;
+    background-image: linear-gradient(purple,pink, rgb(255, 174, 0));
+    border-radius: 20px;
+}
+.first-gif{
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 100%;
+    height: 40%;
 }
