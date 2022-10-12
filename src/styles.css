@@ -46,3 +46,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: green;
     text-align: center;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent, pink);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(transparent, brown);
+}
