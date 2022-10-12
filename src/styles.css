@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~animate.css/animate.css";
+
 body{
     font-family: sans-serif;
 }
-.container{
+/* .container{
     margin-left: 7%;
     margin-right: 5%;
-}
+} */
 .common-form{
     text-align: center;
     display: flex;

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { product } from '../data-type';
 import { ProductService } from '../services/product.service';
-
+import 'animate.css';
 @Component({
   selector: 'app-seller-home',
   templateUrl: './seller-home.component.html',
