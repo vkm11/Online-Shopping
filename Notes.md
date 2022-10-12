@@ -13,7 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 8) ng g service services/product
 9) ng g c seller-update-product
 10) ng g c footer
-
+11) npm install animation.css
 ## Create-Folder(Database)
 - npm install -g json-server
 - json-server --watch db.json
