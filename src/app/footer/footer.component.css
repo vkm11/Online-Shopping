@@ -1,3 +1,7 @@
-footer{
+.footerDesign{
     text-align: center;
+    border: solid black;
+    background: linear-gradient(pink, yellow);
+    border: none;
+
 }
