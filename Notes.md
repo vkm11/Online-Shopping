@@ -39,10 +39,31 @@ npm i @angular/router
 
 
 ## Animation
+### install animate.css
+      npm install animate.css --save
 
-Attention seekers
+
+### import into your file
+      import 'animate.css'
+
+## OR
+### import to your index.html file
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+ 
+ ## app.component.html
+ 1) <h1 class="animate__animated animate__bounce">Animate Example 1</h1>
+ 
+ 2) <h1 class="animate__animated animate__flash animate__delay-2s">Animate Example 1</h1>
+ 
+ 3) <h1 class="animate__animated animate__backInDown animate__faster">Animate Example 1</h1>
+ 
+ 4) <h1 class="animate__animated animate__fadeInLeft animate__repeat-2">Animate Example 1</h1>
+ 
+ 5) <h1 class="animate__animated animate__flip animate__delay-2s animate__repeat-2">Animate Example 1</h1>
+ 
+
+## Attention seekers
 bounce
-
 flash
 pulse
 rubberBand
@@ -54,29 +75,34 @@ tada
 wobble
 jello
 heartBeat
-Back entrances
+
+## Back entrances
 backInDown
 backInLeft
 backInRight
 backInUp
-Back exits
+
+## Back exits
 backOutDown
 backOutLeft
 backOutRight
 backOutUp
-Bouncing entrances
+
+## Bouncing entrances
 bounceIn
 bounceInDown
 bounceInLeft
 bounceInRight
 bounceInUp
-Bouncing exits
+
+## Bouncing exits
 bounceOut
 bounceOutDown
 bounceOutLeft
 bounceOutRight
-bounceOutUp
-Fading entrances
+bounceOutUp 
+
+## Fading entrances
 fadeIn
 fadeInDown
 fadeInDownBig
@@ -90,7 +116,8 @@ fadeInTopLeft
 fadeInTopRight
 fadeInBottomLeft
 fadeInBottomRight
-Fading exits
+
+## Fading exits
 fadeOut
 fadeOutDown
 fadeOutDownBig
@@ -104,52 +131,61 @@ fadeOutTopLeft
 fadeOutTopRight
 fadeOutBottomRight
 fadeOutBottomLeft
-Flippers
+
+## Flippers
 flip
 flipInX
 flipInY
 flipOutX
 flipOutY
-Lightspeed
+
+## Lightspeed
 lightSpeedInRight
 lightSpeedInLeft
 lightSpeedOutRight
 lightSpeedOutLeft
-Rotating entrances
+
+## Rotating entrances
 rotateIn
 rotateInDownLeft
 rotateInDownRight
 rotateInUpLeft
 rotateInUpRight
-Rotating exits
+
+## Rotating exits
 rotateOut
 rotateOutDownLeft
 rotateOutDownRight
 rotateOutUpLeft
-rotateOutUpRight
-Specials
+rotateOutUpRight 
+ 
+## Specials
 hinge
 jackInTheBox
 rollIn
-rollOut
-Zooming entrances
+rollOut 
+
+## Zooming entrances
 zoomIn
 zoomInDown
 zoomInLeft
 zoomInRight
 zoomInUp
-Zooming exits
+
+## Zooming exits
 zoomOut
 zoomOutDown
 zoomOutLeft
 zoomOutRight
 zoomOutUp
-Sliding entrances
+
+## Sliding entrances
 slideInDown
 slideInLeft
 slideInRight
 slideInUp
-Sliding exits
+
+## Sliding exits
 slideOutDown
 slideOutLeft
 slideOutRight
