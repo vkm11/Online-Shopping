@@ -53,13 +53,13 @@ npm i @angular/router
  ## app.component.html
  1) <h1 class="animate__animated animate__bounce">Animate Example 1</h1>
  
- 2) <h1 class="animate__animated animate__flash animate__delay-2s">Animate Example 1</h1>
+ 2) <h1 class="animate__animated animate__flash animate__delay-2s">Animate Example 2</h1>
  
- 3) <h1 class="animate__animated animate__backInDown animate__faster">Animate Example 1</h1>
+ 3) <h1 class="animate__animated animate__backInDown animate__faster">Animate Example 3</h1>
  
- 4) <h1 class="animate__animated animate__fadeInLeft animate__repeat-2">Animate Example 1</h1>
+ 4) <h1 class="animate__animated animate__fadeInLeft animate__repeat-2">Animate Example 4</h1>
  
- 5) <h1 class="animate__animated animate__flip animate__delay-2s animate__repeat-2">Animate Example 1</h1>
+ 5) <h1 class="animate__animated animate__flip animate__delay-2s animate__repeat-2">Animate Example 5</h1>
  
 
 ## Attention seekers
