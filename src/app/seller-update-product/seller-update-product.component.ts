@@ -3,6 +3,9 @@ import { ActivatedRoute } from '@angular/router';
 import { product } from '../data-type';
 import { Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
+import { FormGroup, FormControl} from '@angular/forms';  // it is required for Reactive Form
+
+
 @Component({
   selector: 'app-seller-update-product',
   templateUrl: './seller-update-product.component.html',
@@ -11,6 +14,14 @@ import { ProductService } from '../services/product.service';
 export class SellerUpdateProductComponent implements OnInit {
   productData: undefined | product;
   productMessage: undefined | string;
+  addProduct= new FormGroup({
+    name: new FormControl(),
+    price: new FormControl(),
+    category: new FormControl(),
+    color: new FormControl(),
+    description: new FormControl(),
+    image: new FormControl(),
+  })
   constructor(private route : ActivatedRoute, private product: ProductService, private router:Router) { }
 
   ngOnInit(): void {

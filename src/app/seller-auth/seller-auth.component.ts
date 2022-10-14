@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { Router } from '@angular/router';
 import { SignUp } from '../data-type';
-
+import {FormGroup, FormControl, FormControlName, }from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-seller-auth',
   templateUrl: './seller-auth.component.html',
@@ -10,15 +11,22 @@ import { SignUp } from '../data-type';
 })
 export class SellerAuthComponent implements OnInit {
 
-  
+  sellerSignUp= new FormGroup({
+    name: new FormControl(),
+    email: new FormControl(),
+    password: new FormControl(),
+  })
+  sellerLogin= new FormGroup({
+    email: new FormControl(),
+    password: new FormControl(),
+  })
   showLogin=true;
   authError:string="";
-  constructor(private seller:SellerService, private router:Router) { }
+  constructor(private seller:SellerService, private route : ActivatedRoute, private router:Router) { }
 
 
   ngOnInit(): void {
     this.seller.reloadSeller()
-   
   }
   signUp(data:SignUp):void{
     // console.log(data)

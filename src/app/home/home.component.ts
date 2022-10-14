@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { product } from '../data-type';
 import { ProductService } from '../services/product.service';
 import 'animate.css'
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

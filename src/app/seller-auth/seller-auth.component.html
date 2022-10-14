@@ -6,10 +6,22 @@
                     <img src="../../assets/signUp.png" alt="sign-up">
                 </div>
                 <h1>Seller SignUp</h1>
-                <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
+
+            <!-- Template Driven From -->
+                <!-- <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
                     <input class="form-input" ngModel name="name" type="text" placeholder="Enter Name">
                     <input class="form-input" ngModel name="email" type="text" placeholder="Enter Email">
                     <input class="form-input" ngModel name="password" type="password" placeholder="Enter Password">
+                    
+                    <button class="form-button">Sign Up</button>
+                    <a class="auth-toggle-link" (click)="openLogin()">Already have account? Click here to Login</a>
+                </form> -->
+
+            <!-- Reactive Form -->
+                <form [formGroup]="sellerSignUp" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
+                    <input class="form-input" formControlName="name" type="text" placeholder="Enter Name">
+                    <input class="form-input" formControlName="email" type="text" placeholder="Enter Email">
+                    <input class="form-input" formControlName="password" type="password" placeholder="Enter Password">
                     
                     <button class="form-button">Sign Up</button>
                     <a class="auth-toggle-link" (click)="openLogin()">Already have account? Click here to Login</a>
@@ -26,9 +38,19 @@
                 </div>
                 <h1>Seller SignIn</h1>
                 <p class="error">{{authError}}</p>
-                <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
+                <!-- <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
                     <input class="form-input" ngModel name="email" type="text" placeholder="Enter Email">
                     <input class="form-input" ngModel name="password" type="password" placeholder="Enter Password">
+                    <button class="form-button">Sign In</button>
+                    <a class="auth-toggle-link" (click)="openSignUp()">Don't have account? Click here to register</a>
+                </form> -->
+
+
+
+
+                <form [formGroup]="sellerLogin" (ngSubmit)="login(sellerLogin.value)" class="common-form">
+                    <input class="form-input" ngModel formControlName="email" type="text" placeholder="Enter Email">
+                    <input class="form-input" ngModel formControlName="password" type="password" placeholder="Enter Password">
                     <button class="form-button">Sign In</button>
                     <a class="auth-toggle-link" (click)="openSignUp()">Don't have account? Click here to register</a>
                 </form>

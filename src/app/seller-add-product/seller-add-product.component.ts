@@ -3,8 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { product } from '../data-type';
 import { ProductService } from '../services/product.service';
 import { Router } from '@angular/router';
-
-
+import {FormGroup, FormControl, FormControlName, }from '@angular/forms';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -12,6 +11,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./seller-add-product.component.css']
 })
 export class SellerAddProductComponent implements OnInit {
+
+  addProduct= new FormGroup({
+    name: new FormControl(),
+    price: new FormControl(),
+    category: new FormControl(),
+    color: new FormControl(),
+    description: new FormControl(),
+    image: new FormControl(),
+
+  })
 
   addProductMessage:string|undefined;
   constructor(private product:ProductService, private router:Router) { }
