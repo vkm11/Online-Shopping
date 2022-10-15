@@ -31,3 +31,35 @@ h5{
     text-decoration: none;
     border : none;
 }
+.playIcon{
+  
+}
+figure .play-icon-box{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.videoImage{
+  
+}
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered{
+    position: absolute;
+    float: inline-end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}

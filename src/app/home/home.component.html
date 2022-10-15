@@ -93,3 +93,26 @@
 
   </div>
 </div>
+
+<div class="image-video-wrp">
+  <figure class="container">
+ 
+      <ng-container *ngIf="videodisabled; else videoblock">
+        <img src="../../assets/DS4.jpg" class="img-fluid thumblin" width="100%" height="600">
+        <div class="centered1">Online Shopping</div>
+      </ng-container>
+  
+     
+      <ng-template #videoblock>
+        <iframe width="100%" height="600" src="https://www.youtube.com/embed/ad-GuV6YIMI?autoplay=1&mute=1&controls=0?start=182" title="YouTube video player" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/z_SU0PMtpB4?start=182" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/u7okcPASGKg" frameborder="0" allowfullscreen></iframe> -->
+        <!-- <iframe width="700" height="500" src="https://www.youtube.com/embed/QYU8zydUqD8?autoplay=1&mute=1&controls=0" allowfullscreen></iframe> -->
+      
+      </ng-template>
+      <div class="centered">
+          <img class="playIcon" (click)="changeImg()" [title]="play" [src]="videoIcon" alt="">
+      </div>
+  </figure>
+</div>

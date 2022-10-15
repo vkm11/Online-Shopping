@@ -40,7 +40,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     MatIconModule,
     MatCardModule,
     Ng2SearchPipeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // NgxYoutubePlayerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
