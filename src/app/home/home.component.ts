@@ -10,9 +10,9 @@ import 'animate.css'
 })
 export class HomeComponent implements OnInit {
 
+//  Video Play line 13 to 37 
   videoIcon:string = "../../assets/play.png";
   // videoIcon:string = "<mat-icon>play_circle_outline</mat-icon>";
-  
   play:string = "Play";
   videodisabled:boolean = true;
 
@@ -38,15 +38,26 @@ export class HomeComponent implements OnInit {
 
 
   popularProduts: undefined | product[];
+  trendyProducts: undefined | product[];
   constructor(private product: ProductService) { }
 
   ngOnInit(): void {
+    // this.product.popularProduts().subscribe((result)=>{
+    //   console.log(result);
+    //   if(result){ 
+    //     this.popularProduts=result;
+    //   }
+    // })
+
+   // OR
     this.product.popularProduts().subscribe((result)=>{
-      console.log(result);
-      if(result){ 
-        this.popularProduts=result;
-      }
-    })
+      this.popularProduts=result;
+    });
+
+    this.product.trendyProducts().subscribe((data)=>{
+      this.trendyProducts=data;
+    });
+
   }
 
 }

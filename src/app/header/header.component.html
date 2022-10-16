@@ -1,7 +1,7 @@
 <nav class="nav">
     <h1><a routerLink="/">Digital Shopping</a></h1>
     <div *ngIf="menuType==='default'" class="nav-search">
-        <input type="text" placeholder="Search for products">
+        <input type="text" (keyup)="searchProduct($event)" placeholder="Search for products">
         <button>Search</button>
     </div>
     
