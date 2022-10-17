@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
  
   menuType: string="default"
   sellerName: string="";
+  searchResult: undefined|product[];
   constructor(private route: Router , private product:ProductService) { }
 
 
@@ -44,10 +45,19 @@ export class HeaderComponent implements OnInit {
     if(query){
       // const element=query.target as HTMLTextAreaElement;
       const element=query.target as HTMLInputElement;
-      console.log(element.value)
+      // console.log(element.value)
       this.product.searchProducts(element.value).subscribe((result)=>{
-        console.log(result);
+        console.log(result)
+        if(result.length>5){
+          result.length=5;
+        }
+        
+        this.searchResult=result;
       })
     }
   }
+  hideSearch(){
+    this.searchResult=undefined;
+  }
+  
 }
