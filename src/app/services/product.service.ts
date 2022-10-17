@@ -32,7 +32,7 @@ export class ProductService {
     return this.http.get<product[]>('http://localhost:3000/products?_limit=3');
   }
   trendyProducts(){
-    return this.http.get<product[]>('http://localhost:3000/products?_limit=8');
+    return this.http.get<product[]>('http://localhost:3000/products?_limit=12');
   }
 
   // Auto Search
