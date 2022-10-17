@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { Router } from '@angular/router';
 import { SignUp } from '../data-type';
-import {FormGroup, FormControl, FormControlName, }from '@angular/forms';
+import {FormGroup, FormControl}from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-seller-auth',
@@ -58,5 +58,4 @@ export class SellerAuthComponent implements OnInit {
   openSignUp(){
     this.showLogin=false
   }
-
 }

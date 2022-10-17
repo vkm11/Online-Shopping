@@ -13,7 +13,8 @@ export class HeaderComponent implements OnInit {
   menuType: string="default"
   sellerName: string="";
   searchResult: undefined|product[];
-  constructor(private route: Router , private product:ProductService) { }
+  searchProducts: undefined|product[];
+  constructor(private route: Router, private product:ProductService) { }
 
 
   ngOnInit(): void {

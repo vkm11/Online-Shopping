@@ -7,7 +7,7 @@
     <div class="carousel-item active" *ngFor="let item of popularProduts">
       <img src="{{item.image}}" class="scroll-image" alt="images">
       <h3 class="style-center">{{item.name}}</h3>
-      <p class="style-center">{{item.description}}</p>
+      <p class="style-center">₹{{item.price}}</p>
     </div>
     
       
@@ -118,6 +118,7 @@
       </ng-template>
       <div class="centered">
           <img class="playIcon" (click)="changeImg()" [title]="play" [src]="videoIcon" alt="">
+          <h1 style="color: gray;">Online-Shopping</h1>
       </div>
   </figure>
 </div>
@@ -132,7 +133,7 @@
         <div class="product-details">
           <h6 class="name-head">{{item.name}}</h6>
           <div class="product-price">
-            <h6>{{item.price}}</h6>
+            <h6>₹{{item.price}}</h6>
           </div>
           <div class="product-color">
             <h6>{{item.color}}</h6>

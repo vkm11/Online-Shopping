@@ -62,7 +62,10 @@ figure .play-icon-box{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.image-video-wrp .container .imageTitle{
+    position: absolute;
 
+}
 .bottom-right {
     position: absolute;
     bottom: 8px;
