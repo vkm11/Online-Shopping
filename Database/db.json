@@ -7,55 +7,129 @@
       "id": 1
     },
     {
-      "name": "Suri",
-      "email": "suri@gmail.com",
-      "password": "123",
+      "name": null,
+      "email": "vijay@gmail.com",
+      "password": "vijay@123",
       "id": 2
-    },
-    {
-      "name": "Nithin",
-      "email": "nithin@gmail.com",
-      "password": "123",
-      "id": 3
     }
   ],
   "products": [
     {
       "name": "OnePlus Nord 2T",
-      "price": 28999,
+      "price": "28,999",
       "category": "mobiles",
-      "color": "Black",
-      "image": "https://static.toiimg.com/thumb/resizemode-4,msid-82932058,imgsize-200,width-600/82932058.jpg",
+      "color": "Silver",
       "description": "this is new mobile",
+      "image": "https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9-pro/Morning%20mist-gallery.png",
       "id": 1
     },
     {
       "name": "Redmi note 11 pro",
-      "price": "25000",
-      "color": "White",
+      "price": "25,999",
       "category": "Mobile",
+      "color": "Black",
       "description": "This is new branded Mobile",
-      "image": "https://images-eu.ssl-images-amazon.com/images/I/410TBgL2KXL._SX300_SY300_QL70_FMwebp_.jpg",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Iris/rn11-pro_plus_5g-black!800x800!85.png",
       "id": 2
     },
     {
-      "name": "Dell i5",
-      "price": "51000",
-      "color": "Black",
-      "category": "Laptop",
-      "description": "Dell Laptop",
-      "image": "https://m.media-amazon.com/images/I/61YldGHdqCL._SY355_.jpg",
+      "name": "Apple iPhone 14 pro",
+      "price": "1,51,999",
+      "category": "Mobile",
+      "color": "Gray",
+      "description": "branded mobile 128GB",
+      "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703105/Croma%20Assets/Communication/Mobiles/Images/261963_oqrd6j.png/mxw_640,f_auto",
       "id": 3
     },
-     {
-      "name": "Redmi 10A",
-      "price": "8,999",
-      "color": "Silver",
-      "category": "Mobile",
-      "description": "Redmi 10 A, 4gb ram, 64 gb Storage, 5000 mh-battery ",
-      "image": "https://m.media-amazon.com/images/I/41VcqwZ-O8L._SX300_SY300_QL70_FMwebp_.jpg",
+    {
+      "name": "Shirts",
+      "price": "2,999",
+      "category": "Dress shirt",
+      "color": "3-color",
+      "description": "All type of products available",
+      "image": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-Background-PNG.png",
       "id": 4
+    },
+    {
+      "name": "Redmi 10 Pro Max",
+      "price": "15,999",
+      "category": "Mobile",
+      "color": "Orange",
+      "description": "Redmi 10 A, 4gb ram, 64 gb Storage, 5000 mh-battery ",
+      "image": "https://i02.appmifile.com/558_operator_in/12/08/2021/872bfbfc22ae0c5ab4224883a1cc060f!800x800!85.png",
+      "id": 5
+    },
+    {
+      "name": "Pencil Sketch",
+      "price": "1,999",
+      "color": "Black And White",
+      "category": "Pencil Sketch",
+      "description": "Modelling stylish All types of design model available",
+      "image": "https://github.com/vijay810/pencil_sketch/blob/main/IMG_20210427_140136.jpg?raw=true",
+      "id": 6
+    },
+    {
+      "name": "Rolex Watch",
+      "price": "20,999",
+      "category": "Watch",
+      "color": "Black",
+      "description": "New Model - 2022 ",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Rolex-Watch-PNG-Free-Image.png",
+      "id": 7
+    },
+    {
+      "name": "Dell keyboard",
+      "price": "80,999",
+      "category": "Keyboard",
+      "color": "White",
+      "description": "Mobile,mouse, keyboard,laptop,tv, monitor etc",
+      "image": "https://freepngimg.com/save/161270-white-keyboard-free-download-png-hq/512x246",
+      "id": 8
+    },
+    {
+      "name": "All Vegitable",
+      "price": "100.kg",
+      "category": "Apple, Mango, Banana, Tomato, Bringle,ledy finger",
+      "color": "All Type of Color",
+      "description": "All Vegitables",
+      "image": "https://bucket.mlcdn.com/a/1322/1322078/images/349cf571c071ce3b00749fe9b7c65a6a049cb246.gif",
+      "id": 9
+    },
+    {
+      "name": "Kids Cycle",
+      "price": "10,999",
+      "category": "Cycle",
+      "color": "Light Purple Blue",
+      "description": "Kids Bicycle ",
+      "image": "https://purepng.com/public/uploads/large/kids-bicycle-ulr.png",
+      "id": 10
+    },
+    {
+      "name": "Hercules Cycle",
+      "price": "15,999",
+      "category": "Cycle",
+      "color": "black",
+      "description": "Hercules cycle and moter company ",
+      "image": "https://i.pinimg.com/originals/7e/73/24/7e732423abf22b9a42c62e7e7de794dd.png",
+      "id": 11
+    },
+    {
+      "name": "Timex Watch",
+      "price": "50,999",
+      "category": "Watch",
+      "color": "Golden",
+      "description": "Rolex Golden Color Watch",
+      "image": "https://www.pngmart.com/files/6/Watch-PNG-Transparent-HD-Photo.png",
+      "id": 12
+    },
+    {
+      "name": "Titan Watch",
+      "price": "11,999",
+      "category": "Watch",
+      "color": "Silver",
+      "description": "Titan Silver Color Watch",
+      "image": "https://www.pngmart.com/files/3/Rolex-Watch-PNG-Transparent-Image.png",
+      "id": 13
     }
-    
   ]
 }
